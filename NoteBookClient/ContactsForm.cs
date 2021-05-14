@@ -121,7 +121,8 @@ namespace NoteBookClient
             {
                 if (insForm.ShowDialog() == DialogResult.OK)
                 {
-                    newReport.Value = insForm.textBox1.Text.ToString();
+                    if (insForm.textBox1.Text == "") throw new Exception();
+                    newReport.Value = insForm.textBox1.Text;
                     newReport.ContactTypeId = insForm.TypesIDs[insForm.comboBox1.SelectedIndex].Id;
                     newReport.PersonId = p.Id;
                 }

@@ -21,7 +21,9 @@ namespace NoteBookClient
 
         public Form1()
         {
+            
             InitializeComponent();
+            UpdateTable();
         }
 
         private void RefreshButton_Click(object sender, EventArgs e)
@@ -124,6 +126,7 @@ namespace NoteBookClient
             catch
             {
                 MessageBox.Show("Неверный формат ввода!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
 
 

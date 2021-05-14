@@ -29,7 +29,7 @@ namespace NoteBookClient
             dataGridView1.Rows[0].Cells[0].Value = p.Firstname.ToString();
             dataGridView1.Rows[0].Cells[1].Value = p.Secondname.ToString();
             dataGridView1.Rows[0].Cells[2].Value = p.BirthDay.ToShortDateString();
-
+            button2.Text = "Сохранить изменения";
         }
 
 
